@@ -1,2 +1,7 @@
 # HubIT
-Make a habit in HubIT
+## Make a habit on HubIT
+
+###### Developed by:
+- Sean Myko Baang
+- Gecel Bonn Rodriguez
+
