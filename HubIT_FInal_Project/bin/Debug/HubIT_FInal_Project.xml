@@ -1,0 +1,563 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HubIT_FInal_Project</name>
+    </assembly>
+    <members>
+        <member name="T:HubIT_FInal_Project.FileForm">
+            <summary>
+            This Class contains all methods related
+            To File Handling. This is also the File Window.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.UploadFile(System.String)">
+            <summary>
+            This method is called when the current user
+            wants to upload a file to the system.
+            </summary>
+            <param name="file">Parameter for file</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.verifyFileUpload">
+            <summary>
+            This method is called when verifying
+            the credentials of the user when uploading a file.
+            </summary>
+            <returns>Returns true if account is verified</returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.displayFiles">
+            <summary>
+            This method is called when display all
+            files uploaded by a registered user.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.checkFileInfo">
+            <summary>
+            This method is called when the current user wants to
+            check the selected file from the listbox for information.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.DownloadFile(System.String)">
+            <summary>
+            This method is called when the current user
+            wants to download a file from the system.
+            </summary>
+            <param name="file">Parameter for filepath.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.filterLanguage">
+            <summary>
+            This method is called when the current user
+            wants to filter the files by programming languages.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.filterTopic">
+            <summary>
+            This method is called when the current user wants
+            to filter all topic by topic.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.filterFileType">
+            <summary>
+            This method is called when the current user
+            wants to filter files by file type/extension.
+            </summary>
+        </member>
+        <member name="F:HubIT_FInal_Project.FileForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.FileForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.TopicForm">
+            <summary>
+            This class is the add topic window.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicForm.addBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method allows the user to add topic to the database.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicForm.addTopic">
+            <summary>
+            this method is called when the current user
+            wants to add a topic.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicForm.verifyUpload">
+            <summary>
+            This method is called when the current user
+            is not verified.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:HubIT_FInal_Project.TopicForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.CategoryForm">
+            <summary>
+            This class handles category selection
+            when the current user is uploading a file.
+            </summary>
+        </member>
+        <member name="F:HubIT_FInal_Project.CategoryForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.CategoryForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.CategoryForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.DB">
+            <summary>
+            This class manages the MySQL Connection.
+            </summary>
+            <remarks>
+            This class can open connection, close connection, and get connection.
+            </remarks>
+        </member>
+        <member name="M:HubIT_FInal_Project.DB.openConnection">
+            <summary>
+            Opens connection to the server.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.DB.closeConnection">
+            <summary>
+            Closes connection to the server.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.DB.getConnection">
+            <summary>
+            Gets the connection status of the server.
+            </summary>
+            <returns>
+            The connection status of the server.
+            </returns>
+        </member>
+        <member name="T:HubIT_FInal_Project.Globals">
+            <summary>
+            This purpose of this class is to create
+            a default values for the classes that needed them.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.LoginForm">
+            <summary>
+            This class is the Login window.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.LoginForm.#ctor">
+            <summary>
+            Initializes the objects inside the constructor.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.LoginForm.labelClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            This closes the application.
+            </summary>
+            <param name="sender">Contains a reference to the control/object that raised the event.</param>
+            <param name="e">Contains the event data.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.LoginForm.buttonLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            When clicked and the data entered are correct then it shows another frame/window.
+            </summary>
+            <param name="sender">Contains a reference to the control/object that raised the event.</param>
+            <param name="e">Contains the event data.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.LoginForm.labelGoToSignUp_Click(System.Object,System.EventArgs)">
+            <summary>
+            When clicked it redirects the user to a another frame/window.
+            Which is the RegisterForm.
+            </summary>
+            <param name="sender">Contains a reference to the control/object that raised the event.</param>
+            <param name="e">Contains the event data.</param>
+        </member>
+        <member name="F:HubIT_FInal_Project.LoginForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.LoginForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.LoginForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.MainForm">
+            <summary>
+            This class is the Main window.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.MainForm.displayTopic">
+            <summary>
+            This method is called when the current user
+            wants to see all topics created by other users.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.MainForm.filterLanguage">
+            <summary>
+            This method is called when the current user
+            wants to filter everything by the category given.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.MainForm.filterTopic">
+            <summary>
+            This method is called when the current user
+            wants to filter topics by topics.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.MainForm.showCurrentUserTopic">
+            <summary>
+            This method is called when the current user
+            wants to see his/her created topics.
+            </summary>
+        </member>
+        <member name="F:HubIT_FInal_Project.MainForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.ManagerForm">
+            <summary>
+            This class is the manager window.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.deleteUser">
+            <summary>
+            This method is called when the current manager
+            wants to delete a user in the database.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.addUser">
+            <summary>
+            This method is called when the current manager
+            wants to insert a new user manually.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.displayManagers">
+            <summary>
+            This method is called when the current manager
+            wants to display all users. Can be called during
+            Form load.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.createManagers">
+            <summary>
+            This method is called when the current manager
+            wants to add a new manager to the system.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.deleteManager">
+            <summary>
+            This method is called when the current manager
+            wants to remove a registered manager to the system.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.deleteTopic">
+            <summary>
+            This method is called when the cuurent manager wants to
+            delete a topic created by a registered user.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.checkTextBoxesValues">
+            <summary>
+            This method is called when the values
+            inside the textboxes are default which
+            return to either TRUE or FALSE.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.checkUsername">
+            <summary>
+            This method is called when checking
+            if the user values contains duplicates of the 
+            inputted value in the database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.checkManager">
+            <summary>
+            This method is called when the current manager
+            wants to check if the manager added already exists.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.checkManagerTextBoxesValues">
+            <summary>
+            This method checks the values of the checkboxes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.displayUsers">
+            <summary>
+            This method is called when the current manager
+            wants to display all current users registered
+            to the database.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.displayTopics">
+            <summary>
+            This method is called when the current manager
+            wants to display all topics.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.displayFiles">
+            <summary>
+            This method is called when the current manager wants to display all
+            files uploaded by registered users.
+            </summary>
+        </member>
+        <member name="F:HubIT_FInal_Project.ManagerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.ManagerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.TopicControl">
+            <summary>
+            This class handles the topic display of the application
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicControl.#ctor">
+            <summary>
+            Initializes the objects inside the constructor.
+            </summary>
+        </member>
+        <member name="F:HubIT_FInal_Project.TopicControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.TopicControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.RegisterForm">
+            <summary>
+            This class handles the user registeration.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.#ctor">
+            <summary>
+            Initializes the objects inside the constructor.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.RegisterForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            When frame/window loads, it runs the statement inside.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.buttonCreateAccount_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.checkUsername">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.checkTextBoxesValues">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.labelGoToLogin_MouseEnter(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.labelGoToLogin_MouseLeave(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.labelGoToLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:HubIT_FInal_Project.RegisterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HubIT_FInal_Project.RegisterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HubIT_FInal_Project.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources._lock">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.addTopic_Frame">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.addTopic_Frame2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.button2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.category_selection_frame">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.Create_Account_button">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.Gradient">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.HUBIT">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.Logout_Button">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.Slide_button">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.user">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:HubIT_FInal_Project.Properties.Resources.user1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
